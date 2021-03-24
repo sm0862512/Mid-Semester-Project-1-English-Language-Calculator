@@ -2,11 +2,40 @@ Number1 = 0
 Number2 = 0
 Operators = 0
 
-Number1 = int(input("number1. "))
+Number1 = float(input("Enter number 1: "))
 
-Operator = int(input("operator. "))
+print(" + Sum.")
+print(" - Difference.")
+print(" * Product.")
+print(" ^ Quotient.")
+print(" / Divided by. ")
 
-Number2 = int(input("number2 "))
+choice = int(input("Enter one of the Operators: "))
+def menus(menu):
+    choose = {
+        1: 'Sum',
+        2: 'Difference',
+        3: 'Product',
+        4: 'Quotient',
+        5: 'Divide'
+    }
 
-if Number1 >= 10:
-  print("Invalid Number.")
+    return choose.get(menu, "You entered an invalid number.")
+
+Number2 = int(input("Enter number 2: "))
+
+if choice == 1:
+    sum = Number1 + Number2
+    print(sum)
+if choice == 2:
+    difference = Number1 - Number2
+    print(difference)
+if choice == 3:
+    Product = Number1 * Number2
+    print(Product)
+if choice == 4:
+    Quotient = Number1 ^ Number2
+    print(Quotient)
+if choice == 5:
+    Divide = Number1 / Number2
+    print(Divide)
