@@ -1,6 +1,17 @@
 Number1 = 0
 Number2 = 0
 Operators = 0
+test = 0
+test2 = 0
+
+test2 = input("test2")
+
+test = input("test")
+
+test4 = input("test4")
+test3 = (test2, test, test4)
+print(test3)
+
 
 Number1 = float(input("Enter number 1: "))
 
